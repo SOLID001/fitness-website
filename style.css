@@ -1,0 +1,591 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Mulish', sans-serif;
+}
+
+.current{
+    border-bottom: red 2px solid;
+    padding-bottom: 5px;
+    border-radius: 1px;
+}
+.container{
+    max-width: 1500px;
+    padding: 0px 20px;
+    overflow: auto;
+    margin: auto;
+    position: relative;
+}
+#header1{
+    background: url('./images/group-young-people-training-gym-indoors-maintaining-sportive-lifestyle.jpg') no-repeat center center/cover;
+    height: 110vh;
+    top: 0;
+    position: relative;
+    width: 100%;
+    position: static;
+}
+.material-symbols-outlined{
+    color: #f23a2e;
+    font-size: 60px;
+    padding-bottom: 10px;
+    font-weight: 100;
+}
+.fixed-nav{
+   /* background-color: whitesmoke; */
+   /* padding: 10px; */
+   position: sticky;
+   top: 0;
+   z-index: 100;
+   transition: background-color 0.5s ease;
+   padding-bottom: 20px;
+}
+.fixed-nav.scrolled{
+    background-color: whitesmoke;
+    color: #333;
+    width: 100%;
+}
+.fixed-nav.scrolled a{
+    color: #333;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    padding: 0 20px;
+
+    
+}
+
+.logo{
+    font-size: 25px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding-top: 20px;
+    /* font-weight: 600; */
+}
+.logo a{
+    text-decoration: none;
+    color: white;
+    font-weight: 1000;
+;
+}
+.name{
+    margin-bottom: -35px;
+    margin-left: -35%;
+    color: #ffffff;
+}
+
+.nav-links li{
+    list-style: none;
+    display: inline-block;
+    margin: 5px 30px;
+    cursor: pointer;
+}
+.nav-links li a{
+    text-decoration: none;
+    color: #fffefe;
+    cursor: pointer;
+    font-weight: 600;
+    /* font-weight: bold; */
+}
+.nav-links li a:hover{
+    border-bottom: #fffefe 2px solid;
+    padding-bottom: 4px;
+    transition: all 0.5s;
+    border-radius: 1px;
+}
+
+
+
+.header2{
+    text-align: center;
+    padding: 100px 0px;
+}
+.header2 h1{
+    font-size: 4rem;
+    font-weight: 900;
+    color: white;
+    padding-bottom: 20px;
+}
+.header2 p{
+    font-size: 1.2rem;
+    color: white;
+    
+}
+.btn-primary{
+    padding: 20px 40px;
+    margin-top: 30px;
+    background: transparent;
+    color: white;
+    border: 2px white solid;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.2s;
+}
+.btn-primary:hover{
+    background: white;
+    color: #333;
+}
+
+.hrs{
+    max-width: none;
+    background-color: red;
+    height: 50px;
+    width: fit-content;
+    padding: 100px;
+    margin: 100px;
+}
+.hire-me{
+	background-color: #f23a2e;
+	margin-top: -65px;
+	display: flex;
+    gap: 170px;
+    height: 120px;
+    width: 50%;
+    text-align: left;
+    justify-content: center;
+    /* align-items: center; */
+}
+.hire{
+	color: white;
+	padding-left: 60px;
+    padding-top: 30px;
+    /* margin: 30px 0; */
+    /* text-align: center; */
+    /* margin-top: 0px; */
+}
+.headingc{
+    text-align: center;
+    margin-top: 150px;
+}
+.intro p{
+    color: grey;
+    font-size: 18px;
+}
+.intro{
+    padding-bottom: 100px;
+}
+
+.card-group{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    
+}
+.fitness-margin{
+    margin-bottom: 100px;
+}
+.card{
+    max-width: 300px;
+    /* flex-basis: 80%; */
+    height: 350px;
+    padding: 16px;
+    border-radius: 8px;
+    position: relative;
+    text-align: center;
+    /* justify-content: baseline; */
+    /* flex: 0 0 auto; */
+}
+.perfect p{
+    padding-top: 20px;
+}
+
+.card ::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.21);
+    transition: 0.3s ease-in-out;
+    
+
+
+
+}
+.card :hover::before{
+    opacity: .5;
+    visibility: visible;
+}
+.get{
+    font-weight: 800;
+    font-size: 30px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.411),rgba(0, 0, 0, 0.411)), url(/images/bg_2.jpg);
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    margin: 70px 0px;
+    /* position: static; */
+    justify-content: center;
+}
+.btn{
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 15px;
+    display: inline-block;
+    padding: 15px 30px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bolder;
+    margin-top: 35px;
+    
+}
+.classes{
+	background-color: white;
+	margin: 50px 0px;
+	display: flex;
+    height: 100px;
+    width: 500px;
+    border-radius: 5px;
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.1);
+}
+#class{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 100px;
+}
+.class{
+	color: black;
+	/* padding-left: 60px; */
+    /* margin-top: 40px; */
+    display: flex;
+    gap: 60px;
+}
+.text{
+    margin: 30px;
+}
+.class img{
+    max-width: 100px;
+    border-radius: 5px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+.all{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+
+
+.classes{
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s;
+}
+.classes:hover{
+    transform: scale(1.2);
+    background: #f23a2e;
+}
+.classes:hover p{
+    color: white !important;
+}
+
+.step-counts{
+    background: url('./images/bg_3.jpg') no-repeat center center/cover;
+    position: relative;
+    color: white;
+}
+
+.step-counts::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    color: white;
+}
+
+/* trainers section */
+.trainers-content{
+    margin-top: 50px;
+}
+.trainers-content .card img{
+    width: 90px;
+    height: 110px;
+    border-radius: 50%;
+    padding-bottom: 20px;
+}
+.trainers-content .card h4{
+    color: #9c9a9a;
+    font-size: 10px;
+    padding-bottom: 15px;
+    padding-top: 10px;
+}
+
+/* fitness partner section  */
+.fitness-partner{
+    background: url('./images/bg_1.jpg') no-repeat center center/cover;
+    position: relative;
+    color: whitesmoke;
+}
+
+
+/* contact us */
+.form{
+    background: #f5f7f7;
+    margin-bottom: 100px;
+    height: auto;
+    padding-bottom: 200px;
+    margin-top: 100px;
+}
+.form-container{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+}
+input, textarea{
+    width: 100%;
+    padding: 20px 10px;
+    margin-bottom: 10px;
+    outline: none;
+    border: #d4d4d4 3px solid;
+}
+input:focus{
+    border: #f23a2e 3px solid;
+}
+textarea:focus{
+    border: #f23a2e 3px solid;
+}
+.form-column{
+    display: flex;
+    flex-direction: column;
+}
+.flex-form{
+    display: flex;
+    gap: 20px;
+}
+placeholder{
+    font-size: 30px;
+    padding: 20px;
+}
+.btn-secondary{
+    background: #f23a2e;
+    color: white;
+    padding: 25px 50px;
+    border-style: none;
+    align-self: flex-start;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    justify-self: left !important;
+    align-items: start !important;
+
+}
+.hire-me-below{
+    margin-top: -160px;
+    margin-bottom: 70px;
+}
+
+/* footer */
+.sub-container{
+    text-align: center;
+    margin: 100px 100px;
+    display: flex;
+    gap: 100px;
+    /* width: 00px; */
+    justify-content: center;
+    align-items: center;
+    line-height: 1.5;
+    height: auto;
+    /* text-align: center; */
+}
+.f-1 h3{
+    padding-bottom: 20px;
+}
+.f-2 h3{
+    padding-bottom: 20px;
+}
+.f-3 h3{
+    padding-bottom: 20px;
+}
+f-3{
+    margin-top: 30px;
+}
+.f-mail{
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+}
+.f-btn{
+    padding: 15px 20px;
+    background: #f23a2e;
+    color: white;
+    border-style: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.f-2 ul li{
+    list-style: none;
+    padding-bottom: 16.3px;
+}
+.f-2 ul li a{
+    text-decoration: none;
+    padding-bottom: 30px;
+    color: #f23a2e;
+}
+.f-2 ul li a:hover{
+    color: #9c4b45;
+}
+.f-1{
+    width: 400px;
+}
+.footer-bottom{
+    text-align: center;
+    color: #555;
+    margin: 140px;
+    font-size: 15px;
+}
+.sub-container p{
+    color: #555;
+    font-size: 15px;
+}
+
+.fitness-padding p{
+    padding-top: 10px;
+    line-height: 1.5;
+}
+
+/* hamburger for mobile view */
+.hamburger{
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    padding: 10px;
+    margin-top: 10px;
+    background: #555;
+    border-radius: 5px;
+    
+}
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+    border-radius: 10px;
+
+}
+.mobile-nav-container{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 50%;
+    background: white;
+    overflow-x: hidden;
+    transition: transform 0.3s ease;
+    transform: translateX(100%);
+}
+.mobile-nav-container.show-mobile-nav{
+    transform: translateX(0);
+    visibility: visible;
+}
+.mobile-nav-links{
+    visibility: visible;
+}
+
+/* responsiveness for small screens */
+@media only screen and (max-width: 768px){
+    .hamburger{
+        display: flex;
+    }
+    .nav-links{
+        display: none;
+    }
+    .mobile-nav-container{
+        display: block;
+    }
+    .mobile-nav-links{
+        display: none;
+        padding: 0;
+        margin: 0;
+    }
+    .mobile-nav-links li{
+        padding: 10px;
+    }
+    
+    .header2 h1{
+        font-size: 40px;
+       
+    }
+    .header2 p{
+        font-size: 20px;
+    }
+    .headingc h1{
+        font-size: 40px !important;
+        color: red;
+
+    }
+    .headingc p{
+        font-size: 18px !important;
+    }
+    .intro-content{
+        padding: 0px;
+    }
+    .hire-me{
+        width: 90%;
+    }
+    .all{
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        justify-content: center;
+        align-items: center;
+    }
+    .trainers-content{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .flex-form{
+        align-items: center;
+        justify-content: center;
+    
+    }
+    .flex-form input{
+        width: 350px !important;
+        margin-right: 40px;
+        gap: 10px;
+    }
+    .form{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .form-pt-2{
+        width: 720px;
+    }
+    .sub-container{
+        
+    }
+    .sub-container .f-1{
+        display: none;
+    }
+
+    
+}
